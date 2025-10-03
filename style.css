@@ -1,0 +1,86 @@
+body {
+  font-family: Cursive;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.tarefa-texto.concluida {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.filtros {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.filtros button {
+  background: #6c757d;
+}
+
+.filtros button:hover {
+  background: #495057;
+}

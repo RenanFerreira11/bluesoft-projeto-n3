@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista N3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lista N3</h1>
+    
+    <!-- Campo + botão em flexbox -->
+    <div class="input-container">
+      <input type="text" id="tarefaInput" placeholder="Tarefa">
+      <button id="adicionarBtn">Adicionar</button>
+    </div>
+    
+    <!-- Lista de tarefas -->
+    <ul id="listaTarefas"></ul>
+    
+    <!-- Filtros -->
+    <div class="filtros">
+      <button onclick="filtrar('todas')">Todas</button>
+      <button onclick="filtrar('pendentes')">Pendentes</button>
+      <button onclick="filtrar('concluidas')">Concluídas</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
