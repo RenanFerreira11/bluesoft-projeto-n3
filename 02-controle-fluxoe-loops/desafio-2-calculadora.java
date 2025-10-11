@@ -81,3 +81,13 @@ if (opcaoPagamento == 4) {
     } while (parcelas < 3 || parcelas > 10); 
     //Anotação Para estudo pessoal o || serve para verificar se o usuario digitou um número dentro do intervalo válido estabelecido (3a10) é uma condição.
 }
+
+if (opcaoPagamento == 3 || opcaoPagamento == 4) {
+    if (opcaoPagamento == 3) parcelas = 2; // opção 3 sempre 2 parcelas
+    double valorParcela = valorFinal / parcelas;
+
+    System.out.println("Detalhamento das Parcelas:");
+    for (int i = 1; i <= parcelas; i++) {
+        System.out.printf("Parcela %d: R$ %.2f%n", i, valorParcela);
+    }
+}
