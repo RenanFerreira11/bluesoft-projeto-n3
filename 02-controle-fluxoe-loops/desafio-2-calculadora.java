@@ -62,7 +62,7 @@ switch (opcaoPagamento) {
         descricaoPagamento = "3x ou mais no Cartão (10% de juros)";
         break;
     default:
-        System.out.println("Opção inválida! Encerrando o programa.");
+        System.out.println("Opção inválida!");
         entrada.close();
         return;
 }
