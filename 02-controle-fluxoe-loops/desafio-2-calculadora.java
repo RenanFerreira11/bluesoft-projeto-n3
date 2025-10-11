@@ -91,3 +91,6 @@ if (opcaoPagamento == 3 || opcaoPagamento == 4) {
         System.out.printf("Parcela %d: R$ %.2f%n", i, valorParcela);
     }
 }
+System.out.println("Detalhes da Compra");
+System.out.println("Opção de Pagamento: " + descricaoPagamento);
+System.out.printf("Valor total: R$ %.2f%n", valorFinal);
