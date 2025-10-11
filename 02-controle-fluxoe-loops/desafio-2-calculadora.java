@@ -14,6 +14,7 @@ public class CalculadoraDescontos {
     }
 }
 
+
 import java.util.Scanner;
 
 public class CalculadoraDescontos {
@@ -37,3 +38,33 @@ public class CalculadoraDescontos {
         entrada.close();
     }
 }
+
+
+
+double valorFinal = valorCompra;
+String descricaoPagamento = "";
+
+switch (opcaoPagamento) {
+    case 1:
+        valorFinal = valorCompra * 0.90;
+        descricaoPagamento = "À Vista em Dinheiro/PIX";
+        break;
+    case 2:
+        valorFinal = valorCompra * 0.95;
+        descricaoPagamento = "À Vista no Cartão de Crédito";
+        break;
+    case 3:
+        valorFinal = valorCompra;
+        descricaoPagamento = "2x no Cartão (Sem juros)";
+        break;
+    case 4:
+        valorFinal = valorCompra * 1.10;
+        descricaoPagamento = "3x ou mais no Cartão (10% de juros)";
+        break;
+    default:
+        System.out.println("Opção inválida! Encerrando o programa.");
+        entrada.close();
+        return;
+}
+
+System.out.printf("Valor final calculado: R$ %.2f%n", valorFinal);
