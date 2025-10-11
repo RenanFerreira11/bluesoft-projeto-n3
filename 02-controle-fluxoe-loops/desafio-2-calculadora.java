@@ -68,3 +68,16 @@ switch (opcaoPagamento) {
 }
 
 System.out.printf("Valor final calculado: R$ %.2f%n", valorFinal);
+
+int parcelas = 0;
+
+if (opcaoPagamento == 4) {
+    do {
+        System.out.print("Digite a quantidade de parcelas (3 a 10): ");
+        parcelas = entrada.nextInt();
+        if (parcelas < 3 || parcelas > 10) {
+            System.out.println("Quantidade inválida! Tente novamente.");
+        }
+    } while (parcelas < 3 || parcelas > 10); 
+    //Anotação Para estudo pessoal o || serve para verificar se o usuario digitou um número dentro do intervalo válido estabelecido (3a10) é uma condição.
+}
