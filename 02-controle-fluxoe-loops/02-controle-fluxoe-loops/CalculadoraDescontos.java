@@ -39,7 +39,7 @@ public class CalculadoraDescontos {
                 descricaoPagamento = "3x ou mais no Cartão (10% de juros)";
                 break;
             default:
-                System.out.println("Opção inválida!");
+                System.out.println("Opção inválida, refaça a operação novamente.");
                 entrada.close();
                 return;
         }
