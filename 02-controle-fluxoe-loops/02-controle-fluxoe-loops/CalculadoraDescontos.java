@@ -53,7 +53,7 @@ public class CalculadoraDescontos {
                 System.out.print("Digite a quantidade de parcelas (3 a 10): ");
                 parcelas = entrada.nextInt();
                 if (parcelas < 3 || parcelas > 10) {
-                    System.out.println("Quantidade inválida! Tente novamente.");
+                    System.out.println("Quantidade inválida! Escolha entre 3 a 10.");
                 }
             } while (parcelas < 3 || parcelas > 10); 
             //Anotação Para estudo pessoal o || serve para verificar se o usuario digitou um número dentro do intervalo válido estabelecido (3a10) é uma condição.
